@@ -7,10 +7,10 @@ from os import path
 detect_raw = './cats.jpg'
 image = Image.open(detect_raw)
 
-# processor = DetrImageProcessor.from_pretrained("facebook/detr-resnet-50")
-# model = DetrForObjectDetection.from_pretrained("facebook/detr-resnet-50")
-processor = DetrImageProcessor.from_pretrained("./hub")
-model = DetrForObjectDetection.from_pretrained("./hub")
+processor = DetrImageProcessor.from_pretrained("facebook/detr-resnet-50")
+model = DetrForObjectDetection.from_pretrained("facebook/detr-resnet-50")
+# processor = DetrImageProcessor.from_pretrained("./hub")
+# model = DetrForObjectDetection.from_pretrained("./hub")
 
 inputs = processor(images=image, return_tensors="pt")
 outputs = model(**inputs)
