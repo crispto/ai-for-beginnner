@@ -8,7 +8,7 @@ cache_dir = './cache'
 while True:
     try:
         snapshot_download(repo_id,
-                          local_dir=local_dir, 
+                          local_dir=local_dir,
                           cache_dir=cache_dir,
                           local_dir_use_symlinks=False,
                           resume_download=True,
